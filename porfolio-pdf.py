@@ -78,8 +78,17 @@ with st.sidebar:
         st.rerun()
 
 # --- MAIN CONTENT ---
-st.title("📂 PDF Portfolio Creator")
-st.write("Merge PDFs/Images into pages and attach native files (CAD, ZIP, etc.) automatically.")
+# --- HEADER SECTION ---
+st.title("📂 PDF Binder & Portfolio Creator")
+
+st.markdown("""
+### **How to build your Binder:**
+1.  **Visual Pages:** Upload PDFs or Images. These will be merged into one continuous document that anyone can scroll through.
+2.  **Native Attachments:** Upload any other file (like **AutoCAD .dwg**, **ZIP files**, or **Excel**). These are embedded *inside* the PDF as attachments.
+3.  **Sequence:** Use the arrows to arrange your visual pages in the correct order.
+4.  **Finalize:** Click 'Construct' to download a single, professional PDF containing everything.
+---
+""", unsafe_allow_html=True)
 
 if st.session_state.binder_items:
     # Separate items for UI display
