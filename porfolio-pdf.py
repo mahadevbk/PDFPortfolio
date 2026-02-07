@@ -187,8 +187,5 @@ if st.session_state.binder_items:
 else:
     st.info("Your binder is empty. Upload files in the sidebar to begin.")
 
-st.markdown("""
-<div style='background-color: #0d5384; padding: 1rem; border-left: 5px solid #fff500; border-radius: 0.5rem; color: white;'>
-Built with ❤️ using Streamlit.
-</div>
-""", unsafe_allow_html=True)
+st.markdown("----")
+st.info("Built with ❤️ using [Streamlit](https://streamlit.io/) — free and open source. [Other Scripts by dev](https://devs-scripts.streamlit.app/) on Streamlit.")
